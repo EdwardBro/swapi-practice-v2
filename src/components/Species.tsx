@@ -12,7 +12,7 @@ export default function Species({ data }: { data: SpeciesData[] }) {
     return (
         <>
             <h1>Species</h1>
-            <Grid columns={3}>
+            <Grid columns={2}>
                 {data.map((species: SpeciesData, i: number) => {
                     return (
                         <Grid.Column key={i}>

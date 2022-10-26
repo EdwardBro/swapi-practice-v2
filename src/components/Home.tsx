@@ -1,10 +1,10 @@
 import React from 'react'
-import { Container, Dimmer, Loader } from 'semantic-ui-react';
 
 export default function Home() {
     return (
         <div>
-            <p>Welcome! Check the People and Species tabs</p>
+            <br />
+            <h1>Welcome! Check the People and Species tabs</h1>
         </div>
     )
 }

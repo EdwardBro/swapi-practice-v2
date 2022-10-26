@@ -39,28 +39,35 @@ function App() {
     <div>
       <Router>
         <div className="App-header">
-          <p className='App-title' style={{ marginTop: '1em' }}>
+          <p className='App-title' style={{ paddingTop: '1em' }}>
             Star Wars APi practice
           </p>
           <NavBar />
         </div>
 
-        <Container>
-          {loading ? (
-            <Dimmer active inverted>
-              <Loader inverted>Loading</Loader>
-            </Dimmer>
-          ) : (
-            <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/people' element={<People data={people} />} />
-              <Route path='/species' element={<Species data={species} />} />
-            </Routes>
-          )}
-        </Container>
-        <footer className="footer-content">
+        {loading ? (
+          <Dimmer active inverted>
+            <Loader inverted>Loading</Loader>
+          </Dimmer>
+        ) : (
+
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/people' element={<People data={people} />} />
+            <Route path='/species' element={<Species data={species} />} />
+          </Routes>
+
+        )}
+        <div style={{
+          display: 'block',
+          padding: '20px',
+          height: '60px',
+          width: '100%'
+        }}>
+        </div>
+        <div className="footer-content">
           by EdwardBro
-        </footer>
+        </div>
       </Router>
     </div >
   );

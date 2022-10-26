@@ -3,7 +3,6 @@ html,
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #282c34;
 }
 
 .App-logo {
@@ -55,8 +54,10 @@ html,
   font-family: "Star Wars";
   font-size: 20px;
   position: fixed;
-  left: 0;
   bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
   width: 100%;
   background-color: #282c34;
 }
